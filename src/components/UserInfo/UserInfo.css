@@ -1,0 +1,69 @@
+.aboutMeHeader {
+    font-weight: 700;
+    color: var(--interactive-normal);
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.aboutMeContent {
+    font-size: 14px;
+    margin-bottom: 16px;
+    line-height: 18px;
+    white-space: break-spaces;
+    word-wrap: break-word;
+    user-select: text;
+    color: var(--text-normal);
+    font-weight: 400;
+}
+
+.connections {
+    border-top: 1px solid var(--divider);
+    padding: 16px 0;
+}
+
+.connectedAccounts {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px;
+}
+
+.connectedAccount {
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 0;
+    align-items: center;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding: 8px 14px 8px 8px;
+    width: 275px;
+    border: 1px solid;
+    border-color: var(--divider);
+    cursor: pointer;
+}
+
+.connectedAccountIcon {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.connectedAccountName {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    color: var(--text-normal);
+}

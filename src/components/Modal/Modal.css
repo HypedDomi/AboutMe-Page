@@ -1,0 +1,91 @@
+.modal {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+    background-color: var(--bg);
+    max-height: unset;
+}
+
+.modal .banner img{
+    background-color: var(--accent);
+    max-width: 600px;
+    height: 240px;
+}
+
+.modal .banner img{
+    max-width: 600px;
+    height: 240px;
+    background-color: var(--accent);
+    background-size: cover;
+}
+
+.modal .avatarHeader {
+    position: relative;
+}
+
+.modal .nameTag {
+    margin-bottom: 12px;
+    position: relative;
+    display: block;
+    word-break: break-word;
+    line-height: 24px;
+    font-size: 20px;
+    margin-top: 76px;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.modal .discriminator {
+    color: var(--discriminator);
+}
+
+.modal .tabBarContainer {
+    padding-left: 20px;
+    border-bottom: 1px solid var(--divider);
+}
+
+.modal .tabBar {
+    display: flex;
+    align-items: stretch;
+    height: 55px;
+    flex-direction: row;
+}
+
+.modal .tabBarItem {
+    align-items: center;
+    margin-right: 40px;
+    font-size: 14px;
+    display: flex;
+    position: relative;
+    line-height: 20px;
+    flex-shrink: 0;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    color: var(--interactive-normal);
+    cursor: pointer;
+    user-select: none;
+}
+
+.modal .tabBarItem.selected {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+    cursor: default;
+}
+
+.modal .tabBarItem:not(.selected):hover {
+    color: var(--interactive-hover);
+    border-bottom-color: var(--interactive-hover);
+}
+
+.modal #tabContent {
+    height: 240px;
+    padding: 16px;
+    overflow: hidden scroll;
+}
+
+.modal #tabContent::-webkit-scrollbar {
+    display: none;
+}

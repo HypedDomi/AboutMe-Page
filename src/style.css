@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --bg: #0c0d10;
+  --accent: #E54B4B;
+  --discriminator: #a9bbbe;
+  --divider: rgba(79, 84, 92, 0.5);
+  --primary: #fff;
+  --text-normal: #dcddde;
+  --interactive-normal: #b9bbbe;
+  --interactive-hover: #dcddde;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--text-normal);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1vh;
+  text-shadow: 3px 2px 2px rgba(30, 30, 36 0.15);
+  scroll-behavior: smooth;
+  /* color-scheme: dark; */
+}

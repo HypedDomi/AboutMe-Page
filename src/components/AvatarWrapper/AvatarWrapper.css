@@ -1,0 +1,23 @@
+.avatarWrapper {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -68px;
+    left: 16px;
+    border: 8px solid var(--bg);
+    background-color: var(--bg);
+    border-radius: 50%;
+}
+
+.avatarWrapper .avatarSVG {
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
+.avatarWrapper .avatar {
+    display: block;
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+}
