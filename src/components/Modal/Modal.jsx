@@ -13,7 +13,7 @@ export default class Modal extends Component {
     }
 
     loadData = () => {
-        fetch("http://discord-api-react-bambus.herokuapp.com/")
+        fetch("https://discord-api-react-bambus.herokuapp.com/")
             .then((res) => res.json())
             .then((json) => {
                 this.setState({
