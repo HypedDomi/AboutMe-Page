@@ -7,13 +7,13 @@
     max-height: unset;
 }
 
-.modal .banner img{
+.modal .banner img {
     background-color: var(--accent);
     max-width: 600px;
     height: 240px;
 }
 
-.modal .banner img{
+.modal .banner img {
     max-width: 600px;
     height: 240px;
     background-color: var(--accent);
@@ -38,9 +38,6 @@
     color: var(--primary);
 }
 
-.modal .discriminator {
-    color: var(--discriminator);
-}
 
 .modal .tabBarContainer {
     padding-left: 20px;

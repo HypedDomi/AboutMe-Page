@@ -8,22 +8,31 @@ export default class Modal extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: [],
+            items: [{ "status": "offline" }],
         };
     }
 
-    componentDidMount() {
-        fetch("https://jsonplaceholder.typicode.com/users")
+    loadData = () => {
+        fetch("http://discord-api-react-bambus.herokuapp.com/")
             .then((res) => res.json())
             .then((json) => {
                 this.setState({
-                    items: json,
-                    DataisLoaded: true
+                    items: json
                 });
             })
+            .catch((err) => {
+                console.log(err);
+            }
+        );
+    }
+
+    componentDidMount() {
+        this.loadData();
+        setInterval(this.loadData, 60000);
     }
 
     render() {
+        const { items } = this.state;
         return (
             <div className="modal">
                 <div className="topSection">
@@ -32,11 +41,10 @@ export default class Modal extends Component {
                             <img src={process.env.PUBLIC_URL + "/images/banner.png"} loading="lazy" alt="" />
                         </div>
                         <div className="avatarHeader">
-                            <AvatarWrapper status="online" />
+                            <AvatarWrapper status={items.status} />
                         </div>
                         <div className="nameTag">
-                            <span className="name">HypedDomi</span>
-                            <span className="discriminator">#1711</span>
+                            <span className="name">Dominik</span>
                         </div>
                     </header>
                     <div className="tabBarContainer">
