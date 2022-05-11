@@ -30,7 +30,7 @@ export default class Modal extends Component {
 
     componentDidMount() {
         this.loadData();
-        setInterval(this.loadData, 20000);
+        setInterval(this.loadData, 60000);
     }
 
     render() {
