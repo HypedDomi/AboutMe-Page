@@ -1,0 +1,75 @@
+.activity {
+    position: relative;
+    padding: 16px;
+    padding-bottom: 0;
+}
+
+.activity:last-child {
+    padding: 16px;
+}
+
+.activityHeader {
+    font-weight: 700;
+    color: var(--interactive-normal);
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.activityInfo {
+    flex: 1 1 auto;
+    color: var(--text-normal);
+    margin-top: -5px;
+    overflow: hidden;
+}
+
+.textRow {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.activityContainer {
+    display: flex;
+    align-items: center;
+}
+
+.activityCover {
+    position: relative;
+    align-self: flex-start;
+}
+
+.activityCover img {
+    width: 72px;
+    height: 72px;
+    -webkit-user-drag: none;
+    border-radius: 4px;
+}
+
+.activityCover .assetsLargeImage {
+    display: block;
+}
+
+.activityCover .assetsSmallImage {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+}
+
+.activityTitle {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-normal);
+}
+
+.activityCover + .activityInfo {
+    padding-left: 10px;
+}

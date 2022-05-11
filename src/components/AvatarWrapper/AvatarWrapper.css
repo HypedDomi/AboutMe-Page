@@ -20,4 +20,5 @@
     object-fit: cover;
     width: 120px;
     height: 120px;
+    -webkit-user-drag: none;
 }

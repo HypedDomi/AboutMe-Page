@@ -1,3 +1,7 @@
+.userInfo {
+    padding: 16px;
+}
+
 .aboutMeHeader {
     font-weight: 700;
     color: var(--interactive-normal);
@@ -21,7 +25,7 @@
 
 .connections {
     border-top: 1px solid var(--divider);
-    padding: 16px 0;
+    padding-top: 16px;
 }
 
 .connectedAccounts {
@@ -43,12 +47,18 @@
     border: 1px solid;
     border-color: var(--divider);
     cursor: pointer;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.connectedAccount:hover {
+    border-color: var(--interactive-normal);
 }
 
 .connectedAccountIcon {
     width: 30px;
     height: 30px;
     flex-shrink: 0;
+    -webkit-user-drag: none;
 }
 
 .connectedAccountName {

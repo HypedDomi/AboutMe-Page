@@ -1,38 +1,40 @@
 import { Component } from 'react';
-import "./Modal.css";
 import AvatarWrapper from "../AvatarWrapper/AvatarWrapper";
 import Tabs from "../TabBar/Tabs";
 import UserInfo from "../UserInfo/UserInfo";
+import ActivityWrapper from '../Activites/ActivityWrapper';
+import "./Modal.css";
 
+var oldState;
 export default class Modal extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: [{ "status": "offline" }],
+            isFetching: true,
+            data: {},
         };
     }
 
     loadData = () => {
+        this.setState({...this.state, isFetching: true });
+        oldState = this.state;
         fetch("https://discord-api-react-bambus.herokuapp.com/")
             .then((res) => res.json())
             .then((json) => {
                 this.setState({
-                    items: json
+                    data: json,
+                    isFetching: false
                 });
-            })
-            .catch((err) => {
-                console.log(err);
-            }
-        );
+            });
     }
 
     componentDidMount() {
         this.loadData();
-        setInterval(this.loadData, 60000);
+        setInterval(this.loadData, 20000);
     }
 
     render() {
-        const { items } = this.state;
+        const { isFetching, data } = this.state;
         return (
             <div className="modal">
                 <div className="topSection">
@@ -41,7 +43,7 @@ export default class Modal extends Component {
                             <img src={process.env.PUBLIC_URL + "/images/banner.png"} loading="lazy" alt="" />
                         </div>
                         <div className="avatarHeader">
-                            <AvatarWrapper status={items.status} />
+                            <AvatarWrapper status={isFetching ? oldState?.data.hasOwnProperty("status") ? oldState.data.status : "offline" : data.status} />
                         </div>
                         <div className="nameTag">
                             <span className="name">Dominik</span>
@@ -52,7 +54,9 @@ export default class Modal extends Component {
                             <div label="User Info">
                                 <UserInfo />
                             </div>
-                            <div label="Activity">Activity</div>
+                            <div label="Activity">
+                                <ActivityWrapper data={isFetching ? oldState?.data.hasOwnProperty("activities") ? oldState.data.activities : [] : data.activities} />
+                            </div>
                         </Tabs>
                     </div>
                 </div>
