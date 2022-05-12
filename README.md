@@ -1,5 +1,5 @@
 # About Me Page
-Simple about me page build with React. Looks like the Discord User Modal
+Simple about me page build with React. Looks like the Discord User Modal and loads my Discord Status and Activities
 
 ![Preview](Preview.png)
 
