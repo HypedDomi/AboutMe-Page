@@ -1,4 +1,4 @@
-# About Me Page
+# AboutMe Page
 Simple about me page build with React. Looks like the Discord User Modal and loads my Discord Status and Activities
 
 Code for the Discord Bot: https://github.com/HypedDomi/AboutMe-DiscordBot
