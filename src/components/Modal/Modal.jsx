@@ -16,7 +16,7 @@ export default class Modal extends Component {
     }
 
     loadData = () => {
-        this.setState({...this.state, isFetching: true });
+        this.setState({ ...this.state, isFetching: true });
         oldState = this.state;
         fetch("https://discord-api-react-bambus.herokuapp.com/")
             .then((res) => res.json())

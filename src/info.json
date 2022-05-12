@@ -3,32 +3,26 @@
     "connections": [
         {
             "type": "github",
-            "username": "HypedDomi",
             "link": "https://github.com/HypedDomi"
         },
         {
             "type": "discord",
-            "username": "HypedDomi#1711",
             "link": "https://discord.com/users/354191516979429376"
         },
         {
             "type": "mail",
-            "username": "domi@bambus.me",
             "link": "mailto:domi@bambus.me"
         },
         {
             "type": "spotify",
-            "username": "Dominik",
             "link": "https://open.spotify.com/user/w3n4nfntxo820v80ti441uplr"
         },
         {
             "type": "instagram",
-            "username": "HypedDomi",
             "link": "https://instagram.com/hypeddomi"
         },
         {
             "type": "paypal",
-            "username": "Dominik1711",
             "link": "https://paypal.me/Dominik1711"
         }
     ]

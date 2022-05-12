@@ -4,8 +4,8 @@
     position: absolute;
     top: -68px;
     left: 16px;
-    border: 8px solid var(--bg);
-    background-color: var(--bg);
+    border: 8px solid var(--background);
+    background-color: var(--background);
     border-radius: 50%;
 }
 

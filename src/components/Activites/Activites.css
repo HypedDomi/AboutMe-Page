@@ -1,3 +1,7 @@
+.activityWrapper {
+    margin-top: -2px;
+}
+
 .activity {
     position: relative;
     padding: 16px;
@@ -72,4 +76,20 @@
 
 .activityCover + .activityInfo {
     padding-left: 10px;
+}
+
+.emptyActivity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    padding: 20px 0;
+}
+
+.emptyActivityText {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 48px;
+    color: var(--interactive-normal);
 }

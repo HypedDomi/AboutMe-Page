@@ -3,7 +3,7 @@
     overflow: hidden;
     position: relative;
     width: 600px;
-    background-color: var(--bg);
+    background-color: var(--background);
     max-height: unset;
 }
 
